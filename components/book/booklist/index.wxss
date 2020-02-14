@@ -1,0 +1,20 @@
+.ty-booklist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ty-booklist__head {
+  margin: 36rpx auto 25rpx;
+  width: 107rpx;
+  height: 34rpx;
+}
+.ty-booklist__card {
+  margin: 0 45rpx 60rpx;
+}
+.ty-booklist__body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

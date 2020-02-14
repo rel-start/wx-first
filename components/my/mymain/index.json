@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-button": "/components/image-button/index",
+    "v-likes-card": "/components/my/card/index",
+    "v-loading": "/components/loading/index"
+  }
+}

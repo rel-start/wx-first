@@ -1,0 +1,25 @@
+.ty-tag {
+  background-color: #f7f7f7;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20rpx;
+  border-radius: 2rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+}
+
+.oval {
+  border-radius: 26rpx;
+  padding: 0 28rpx;
+}
+
+.ty-tag-content {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.ty-tag-nums {
+  margin-left: 10rpx;
+  color: #bbb;
+  font-size: 20rpx;
+}

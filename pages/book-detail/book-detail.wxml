@@ -1,0 +1,29 @@
+<wxs src="../../util/tools.wxs" module="tools" />
+
+<view class="bdetail-container">
+	<v-bookcover bookDetail="{{bookDetail}}" />
+
+	<block>
+		<v-infobox title="短评">
+			<text wx:if="{{bookShortComment.length===0}}" class="noComment">暂无短评</text>
+			<view wx:else class="bdetail-comment">
+				<v-tag mclass="bdetail-tag" category="2" wx:for="{{tools.limit(bookShortComment, 10)}}" wx:key="content" content="{{item.content}}" nums="{{item.nums}}" />
+			</view>
+		</v-infobox>
+
+		<v-infobox title="内容简介">
+			<text hidden="{{true}}" class="bdetail-summary1" decode="{{true}}">{{tools.handingLineBreak(summary1)}}</text>
+			<text catch:transitionend="summaryTransitionEnd" style="height: {{summaryHeight}}" class="bdetail-summary" decode="{{true}}">{{tools.handingLineBreak(summary)}}</text>
+			<view wx:if="{{summaryCanexpand}}" class="bdetail-more" catchtap="expandOrPutAwayMoreBtn">{{moreBtnclicked ? '收起' : '展开更多'}}</view>
+		</v-infobox>
+		
+		<v-infobox title="书本信息">
+			<view wx:for="{{bookEntry}}" wx:key="label" class="bdetail-entry">
+				<text class="bdetail-entry__label">{{item.label}}</text>
+				<text class="bdetail-entry__main">{{item.value}}</text>
+			</view>
+		</v-infobox>
+	</block>
+</view>
+
+<v-bookcommont bind:add="addBookShortComment" bookShortComment="{{bookShortComment}}" bookLikeInfo="{{bookLikeInfo}}" isposting="{{isposting}}" />

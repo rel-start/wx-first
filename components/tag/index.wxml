@@ -1,0 +1,5 @@
+<!-- category: 2。椭圆tag 其他为矩型tag -->
+<view catch:tap="passParamsByTap" class="ty-tag mclass {{category===2 ? 'oval' : ''}}">
+  <text class="ty-tag-content">{{content}}</text>
+  <text wx:if="{{nums}}" class="ty-tag-nums">+{{nums}}</text>
+</view>

@@ -1,0 +1,7 @@
+<view class="ty-bcover">
+	<image class="ty-bcover-img" src="{{bookDetail.image}}" />
+	<text class="ty-bcover-title">{{bookDetail.title}}</text>
+	<view class="ty-bcover-authors">
+    <text class="author" wx:for="{{bookDetail.author}}" wx:key="*this">{{item}}</text>
+  </view>
+</view>

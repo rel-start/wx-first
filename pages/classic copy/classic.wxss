@@ -1,0 +1,10 @@
+@import "/css/weui.wxss";
+
+.header {
+  height: 101rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10rpx 0 30rpx;
+  justify-content: space-between;
+}

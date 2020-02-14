@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/classic/classic",
+    "pages/book/book",
+    "pages/my/my",
+    "pages/book-detail/book-detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "第一个小程序",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "color": "#c7c7c7",
+    "backgroundColor": "#fff",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/classic/classic",
+        "text": "流行",
+        "iconPath": "/images/tabBar/classic.png",
+        "selectedIconPath": "/images/tabBar/classic@highlight.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "书籍",
+        "iconPath": "/images/tabBar/book.png",
+        "selectedIconPath": "/images/tabBar/book@highlight.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "喜欢",
+        "iconPath": "/images/tabBar/my.png",
+        "selectedIconPath": "/images/tabBar/my@highlight.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+// 处理服务器数据 双斜杠(\\n)转成(\n)，是页面上能正常换行
+var handingLineBreak = function (text) {
+  if (!text || text.constructor !== "String") return;
+  var rx = getRegExp("\\\\n", "g");
+  return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + text.replace(rx, "\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+}
+
+// 限制数组的个数。例如：短评的数量
+var limit = function (array, length) {
+  if (!array || array.constructor !== "Array") return;
+  return array.slice(0, length);
+}
+
+// 将期刊的type转换成 电影:100 诗句:300 音乐:200
+var annotateNumberTypes = function (type) {
+  switch (type) {
+    case 100:
+      return "电影";
+    case 200:
+      return "音乐";
+    case 300:
+      return "诗句";
+  }
+}
+
+module.exports = {
+  handingLineBreak: handingLineBreak,
+  limit: limit,
+  annotateNumberTypes: annotateNumberTypes,
+}

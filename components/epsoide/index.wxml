@@ -1,0 +1,11 @@
+<view class="ty-epsoide">
+	<view class="ty-epsoide-no">
+		<text class="no">No.</text>
+		<text class="no-index">{{index}}</text>
+	</view>
+	<text class="ty-epsoide-hr">|</text>
+	<view class="ty-epsoide-date">
+		<view>{{month}}</view>
+		<view class="ty-epsoide-year">{{year}}</view>
+	</view>
+</view>

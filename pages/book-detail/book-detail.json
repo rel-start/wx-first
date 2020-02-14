@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "v-searchbar": "/components/book/searchbar/index",
+    "v-bookcover": "/components/book/bookcover/index",
+    "v-infobox": "/components/infobox/index",
+    "v-tag": "/components/tag/index",
+    "v-bookcommont": "/components/book/bookcommont/index"
+  },
+  "navigationBarTitleText": "图书"
+}

@@ -1,0 +1,7 @@
+<view hidden="{{hidden}}" class="classic-container">
+  <view class="classic-exhibition">
+    <image class="classic-img" src="{{img}}"/>
+    <image class="classic-tag" src="./images/movie@tag.png" />
+  </view>
+  <text class="classic-content">{{content}}</text>
+</view>

@@ -1,0 +1,6 @@
+<view class="ty-searchbar">
+	<view catchtap="showSearchComp" class="ty-searchbtn">
+		<image class="ty-searchbtn-icon" src="../../images/search@icon.png" />
+		<text class="ty-searchbtn-text">搜索图书名称</text>
+	</view>
+</view>

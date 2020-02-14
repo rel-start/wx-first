@@ -1,0 +1,29 @@
+.ty-epsoide {
+  font-size: 24rpx;
+  height: 46rpx;
+  line-height: 1;
+}
+
+.ty-epsoide-no {
+  float: left;
+}
+
+.ty-epsoide-no .no-index {
+  font-size: 46rpx;
+}
+
+.ty-epsoide-hr {
+  float: left;
+  font-size: 46rpx;
+  margin: 0 10rpx;
+  font-weight: 100;
+}
+
+.ty-epsoide-date {
+  float: left;
+  text-align: center;
+}
+
+.ty-epsoide-year {
+  font-size: 22rpx;
+}

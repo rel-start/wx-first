@@ -1,0 +1,9 @@
+<view catchtap="goToDetailByBookID" class="ty-card">
+	<image class="ty-card-img" src="{{book.image}}" />
+	<view class="ty-card-main">
+		<text class="ty-card-title ellipsis">{{book.title}}</text>
+		<text class="ty-card-auther ellipsis">{{book.author}}</text>
+		<view class="ty-card-info">{{book.fav_nums}} 喜欢</view>
+		<slot/>
+	</view>
+</view>

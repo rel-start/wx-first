@@ -1,0 +1,13 @@
+<wxs src="../../../util/tools.wxs" module="tools" />
+
+<view class="likes-card mclass">
+  <view class="card__head">
+    <v-tag mclass="tag" content="{{tools.annotateNumberTypes(currentClassic.type)}}"/>
+    <v-likes bind:like="onLike" count="{{currentClassic.fav_nums}}" like="{{currentClassic.like_status}}" />
+  </view>
+  <view class="imgbox">
+    <image class="card-img {{currentClassic.type==200?'card-img-music': ''}}" src="{{currentClassic.image}}"/>
+  </view>
+  <text class="card-des">{{currentClassic.content}}</text>
+</view>
+

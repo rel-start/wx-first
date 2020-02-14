@@ -1,0 +1,19 @@
+.hotbook-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 108rpx 45rpx 0;
+}
+
+.hobook-loading {
+  margin: -20rpx auto 40rpx;
+}
+
+.noresult {
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #999;
+}

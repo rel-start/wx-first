@@ -1,0 +1,5 @@
+<view class="ty-navi">
+	<image class="ty-navi-img" src="{{ first ? disLeftSrc : leftSrc}}" bindtap="getPrevClassic" />
+	<text>{{title}}</text>
+	<image class="ty-navi-img" src="{{ latest ? disRightSrc : rightSrc}}" bindtap="getNextClassic" />
+</view>

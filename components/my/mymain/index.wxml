@@ -1,0 +1,25 @@
+<view class="my-container">
+	<view class="header">
+		<image class="header-bg" src="../images/my-header@bg.png" />
+		<view class="header__body">
+			<v-button wx:if="{{!isAuthorized}}" bindgetuserinfo="onGetUserInfo" open-type="getUserInfo">
+				<view class="login-btn" slot="img">
+					<text class="login-txt">点击登录</text>
+				</view>
+			</v-button>
+			<block wx:if="{{isAuthorized}}">
+				<image class="user-img" src="{{userInfo.avatarUrl}}" />
+				<text class="users">{{userInfo.nickName}}</text>
+			</block>
+		</view>
+	</view>
+	<view class="likes-list">
+		<image class="likes__head" src="../images/my-body@card_title.png" />
+		<view class="likes__body">
+			<v-likes-card mclass="card" wx:for="{{currentData}}" current-classic="{{item}}" wx:key="index" />
+			<text class="noLikes" bindtap="onJumpToClassicPage" wx:if="{{!currentData.length}}">当前没有喜欢的期刊，快去添加</text>
+
+		</view>
+	</view>
+			<v-loading mclass="hobook-loading" wx:if="{{isLoadingForBottom}}" />
+</view>

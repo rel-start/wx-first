@@ -1,0 +1,41 @@
+@import '../classic.wxss';
+
+.ty-music-exhibition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ty-music-cd {
+  position: relative;
+  width: 422rpx;
+  height: 422rpx;
+}
+
+.ty-cd-animation {
+  animation: cd-rotate 5s infinite;
+  -webkit-animation: cd-rotate 5s linear infinite;
+}
+
+@keyframes cd-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes cd-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ty-music-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.ty-player-img {
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  top: calc(50% - 60rpx);
+  left: calc(50% - 60rpx);
+}

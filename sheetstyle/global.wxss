@@ -1,0 +1,7 @@
+/* 文字溢出显示省略号 */
+.ellipsis {
+  word-wrap: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

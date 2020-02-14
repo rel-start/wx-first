@@ -1,0 +1,10 @@
+<view class="ty-classic ty-music">
+	<view class="ty-classic-exhibition ty-music-exhibition">
+		<view class="ty-music-cd">
+			<image class="ty-music-img{{isplaying ? ' ty-cd-animation' : ''}}" src="{{img}}" />
+			<image bindtap="playOrPauseMusic" class="ty-player-img" src="{{isplaying ? playSrc : pauseSrc}}" />
+		</view>
+		<image class="ty-classic-tag" src="./images/music@tag.png" />
+	</view>
+	<text class="ty-classic-content">{{content}}</text>
+</view>

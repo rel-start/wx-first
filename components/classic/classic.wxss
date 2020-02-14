@@ -1,0 +1,34 @@
+.ty-classic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 900rpx;
+}
+
+.ty-classic-exhibition {
+  width: 750rpx;
+  height: 500rpx;
+  position: relative;
+}
+
+.ty-classic-img {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.ty-classic-tag {
+  width: 46rpx;
+  height: 142rpx;
+  position: absolute;
+  left: 30rpx;
+  bottom: -82rpx;
+}
+
+.ty-classic-content {
+  margin-top: 112rpx;
+  font-size: 34rpx;
+  line-height: 50rpx;
+  max-width: 550rpx;
+  font-weight: 300;
+  flex: 1;
+}

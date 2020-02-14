@@ -1,0 +1,8 @@
+<view class="ty-search-term mclass">
+	<view class="header">
+    {{title}}
+  </view>
+	<view class="tagbox">
+		<slot/>
+	</view>
+</view>

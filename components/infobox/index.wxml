@@ -1,0 +1,6 @@
+<view class="ty-infobox bdetail-comment-infobox">
+	<text class="ty-infobox__head">{{title}}</text>
+	<view class="ty-infobox__body">
+		<slot />
+	</view>
+</view>

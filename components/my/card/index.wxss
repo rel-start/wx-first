@@ -1,0 +1,70 @@
+.likes-card {
+  display: inline-flex;
+  flex-direction: column;
+  width: 330rpx;
+  height: 470rpx;
+  background-color: #fff;
+  box-shadow: 0 2rpx 18rpx rgba(0, 0, 0, 0.05);
+}
+
+.card__head {
+  display: flex;
+  padding: 0 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  box-sizing: border-box;
+}
+
+.card__head .tag {
+  height: 40rpx;
+  padding: 0 15rpx;
+}
+
+.imgbox {
+  width: 330rpx;
+  height: 240rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img {
+  width: 330rpx;
+  height: 240rpx;
+}
+
+.card-img-music {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  position: relative;
+}
+
+.card-img-music::after {
+  content: '';
+  display: block;
+  width: 68rpx;
+  height: 68rpx;
+  position: absolute;
+  background-color: #fff;
+  top: calc(50% - 34rpx);
+  left: calc(50% - 34rpx);
+  border-radius: 50%;
+}
+
+.card-des {
+  display: flex;
+  padding: 0 20rpx;
+  color: #999;
+  margin-top: 33rpx;
+  font-size: 28rpx;
+  line-height: 42rpx;
+  height: 84rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

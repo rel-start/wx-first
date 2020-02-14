@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-bookmain": "/components/book/bookmain/index"
+  },
+  "navigationBarTitleText": "热搜图书"
+}

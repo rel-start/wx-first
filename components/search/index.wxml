@@ -1,0 +1,19 @@
+<!-- 搜索关键词的结果显示在book页面中 -->
+<view class="ty-search">
+		<view class="ty-search__head">
+				<view class="input-group">
+						<image class="icon" src="../images/search@icon.png" />
+						<input bindconfirm="onConfirm" value="{{inputValue}}" bindinput="onInput" class="input" placeholder="搜索图书名称" auto-focus />
+						<image bindtap="clearInput" wx:if="{{isThereContent}}" class="cancel" src="../images/search@cancel.png" />
+				</view>
+				<view class="btn" catchtap="hideSearchComp">取消</view>
+		</view>
+		<view class="ty-search-body">
+				<v-search-term wx:if="{{historyKeywords.length!==0}}" title="历史搜索">
+						<v-tag bind:tapping="searchByTapKeywords" wx:for="{{historyKeywords}}" content="{{item}}" mclass="tag" wx:key="*this" />
+				</v-search-term>
+				<v-search-term mclass="mt20" title="热门搜索">
+						<v-tag bind:tapping="searchByTapKeywords" wx:for="{{hotKeywords}}" content="{{item}}" mclass="tag" wx:key="*this" />
+				</v-search-term>
+		</view>
+</view>

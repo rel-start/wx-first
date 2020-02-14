@@ -1,0 +1,10 @@
+<view hidden="{{hidden}}" class="classic-container music-container">
+	<view class="classic-exhibition music-exhibition">
+		<view class="music-cd">
+			<image class="music-img{{isplaying ? ' cd-animation' : ''}}" src="{{img}}" />
+			<image catchtap="playOrPauseMusic" class="player-img" src="{{isplaying ? playSrc : pauseSrc}}" />
+		</view>
+		<image class="classic-tag" src="./images/music@tag.png" />
+	</view>
+	<text class="classic-content">{{content}}</text>
+</view>

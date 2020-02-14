@@ -1,0 +1,6 @@
+<view class="ty-booklist">
+	<image class="ty-booklist__head" src="./images/hotbook@title.png" />
+	<view class="ty-booklist__body">
+		<v-card wx:for="{{books}}" wx:key="id" book="{{item}}" class="ty-booklist__card"/>
+	</view>
+</view>

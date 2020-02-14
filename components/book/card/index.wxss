@@ -1,0 +1,39 @@
+@import '/sheetstyle/global.wxss';
+
+.ty-card {
+  display: flex;
+  flex-direction: column;
+  width: 240rpx;
+  height: 360rpx;
+  font-size: 20rpx;
+  line-height: 30rpx;
+  color: #999;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 6rpx 6rpx 20rpx rgba(0,0,0,0.05);
+}
+
+.ty-card-img {
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  width: 240rpx;
+  height: 223rpx;
+  margin-bottom: 17rpx;
+}
+
+.ty-card-main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx;
+}
+
+.ty-card-title {
+  font-size: 24rpx;
+  color: #1f1f1f;
+}
+
+.ty-card-info {
+  margin-top: 17rpx;
+  color: #bbb;
+  text-align: right;
+}

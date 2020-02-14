@@ -1,0 +1,34 @@
+<wxs src="../../../util/tools.wxs" module="tools" />
+
+<view wx:if="{{!isposting}}" class="ty-bcommont-fake">
+	<view catchtap="showOrHideLayer" class="ty-bcommont-write">
+		<image class="icon" src="./images/commont@write.png" />
+		<text class="txt">留下你的短评</text>
+	</view>
+
+	<view class="ty-bcommont-sharebox">
+		<v-likes bind:like="onLike" like="{{bookLikeInfo.like_status}}" count="{{bookLikeInfo.fav_nums}}" />
+		<v-button open-type="share">
+      <image slot="img" class="share" src="../../images/commont@share.png" />
+    </v-button>
+	</view>
+</view>
+
+<!-- /// -->
+
+<block wx:else>
+  <view class="ty-bcommont-posting">
+    <view class="ty-bcommont__pheader">
+      <text catchtap="showOrHideLayer" class="cancel">取消</text>
+      <text wx:if="{{bookShortComment.length!==0}}">可点击标签+1</text>
+    </view>
+    <view class="ty-bcommont__pbody">
+      <text wx:if="{{bookShortComment.length===0}}" class="^noComment">暂无短评</text>
+      <block wx:else>
+        <v-tag mclass="tag" class="v-tag" wx:for="{{tools.limit(bookShortComment, 3)}}" wx:key="content" content="{{item.content}}" nums="{{item.nums}}" catch:tapping="passContentFromTag" />
+      </block>
+    </view>
+    <input bindconfirm="passContentFromTag" maxlength="10" class="ty-bcommont__pinput" placeholder="短评最多12个字" />
+  </view>
+  <v-graylayer catch:onCancel="showOrHideLayer" />
+</block>

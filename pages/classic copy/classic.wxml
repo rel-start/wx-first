@@ -1,0 +1,10 @@
+<view class="header">
+	<epsoide-cmp index="{{currentClassic.index}}" />
+	<like-cmp bind:like="onLike" like="{{likeStatus}}" count="{{favNums}}" />
+</view>
+<view capture-bind:touchstart="classicTouchStart" capture-bind:touchend="classicTouchEnd" capture-bind:touchcancel="classicTouchCancel">
+	<movie-cmp id="movie-cmp" hidden="{{currentClassic.type!==100}}" img="{{currentClassic.image}}" content="{{currentClassic.content}}" />
+	<music-cmp hidden="{{currentClassic.type!==200}}" musicSrc="{{currentClassic.url}}" musicTitle="{{currentClassic.title}}" img="{{currentClassic.image}}" content="{{currentClassic.content}}" id="music-cmp" />
+	<essay-cmp id="essay-cmp" hidden="{{currentClassic.type!==300}}" img="{{currentClassic.image}}" content="{{currentClassic.content}}" />
+</view>
+<navi-cmp bind:changeClassic="changeClassic" title="{{currentClassic.title}}" first="{{first}}" latest="{{latest}}" />

@@ -1,0 +1,18 @@
+.ty-navi {
+  width: 600rpx;
+  height: 80rpx;
+  background-color: #f7f7f7;
+  border-radius: 2rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.ty-navi-img {
+  width: 23rpx;
+  height: 34rpx;
+  padding: 20rpx;
+}

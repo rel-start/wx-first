@@ -1,0 +1,15 @@
+<view class="header">
+  <v-epsoide index="{{currentClassic.index}}" />
+  <view class="header-right">
+    <v-like bind:like="onLike" like="{{likeStatus}}" count="{{favNums}}" />
+    <v-button open-type="share">
+      <image slot="img" class="share" src="../../components/images/commont@share.png" />
+    </v-button>
+  </view>
+</view>
+<view capture-bind:touchstart="classicTouchStart" capture-bind:touchend="classicTouchEnd" capture-bind:touchcancel="classicTouchCancel">
+  <v-movie wx:if="{{currentClassic.type===100}}" img="{{currentClassic.image}}" content="{{currentClassic.content}}" />
+  <v-music musicSrc="{{currentClassic.url}}" musicTitle="{{currentClassic.title}}" wx:if="{{currentClassic.type===200}}" img="{{currentClassic.image}}" content="{{currentClassic.content}}" />
+  <v-essay wx:if="{{currentClassic.type===300}}" img="{{currentClassic.image}}" content="{{currentClassic.content}}" />
+</view>
+<v-navi bind:changeClassic="changeClassic" title="{{currentClassic.title}}" first="{{first}}" latest="{{latest}}" />

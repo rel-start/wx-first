@@ -1,0 +1,4 @@
+<view bindtap="onLike" class="ty-likes">
+  <image class="ty-likes-img" src="{{like ? yesSrc : noSrc}}" width="18" height="18"></image>
+  <text class="ty-likes-count">{{count}}</text>
+</view>

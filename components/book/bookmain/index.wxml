@@ -1,0 +1,10 @@
+<!-- 搜索关键词的结果显示在此页面中 -->
+<view wx:if="{{!searching}}" class="hotbook-container">
+		<v-searchbar bind:search="switchSearchComp" />
+		<v-booklist books="{{currentData}}" />
+		<view wx:if="{{noResult}}" class="noresult">
+			没有搜索到结果
+		</view>
+		<v-loading mclass="hobook-loading" wx:if="{{isLoadingForBottom}}" />
+</view>
+<v-search wx:if="{{searching}}" bind:search="switchSearchComp" />

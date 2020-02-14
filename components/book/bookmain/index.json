@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "v-searchbar": "/components/book/searchbar/index",
+    "v-booklist": "/components/book/booklist/index",
+    "v-card": "/components/book/card/index",
+    "v-search": "/components/search/index",
+    "v-loading": "/components/loading/index"
+  }
+}

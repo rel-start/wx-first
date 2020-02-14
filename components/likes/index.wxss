@@ -1,0 +1,23 @@
+
+
+.ty-likes {
+  display: flex;
+  line-height: 1;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10rpx;
+}
+.ty-likes-img{
+  width: 32rpx;
+  height: 28rpx;
+}
+
+.ty-likes-count {
+  position: relative;
+  top: -7rpx;
+  left: 5rpx;
+  width: 20rpx;
+  color: #bbb;
+  font-size: 18rpx;
+  font-weight: 300;
+}

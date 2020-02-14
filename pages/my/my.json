@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-mymain": "/components/my/mymain/index"
+  },
+  "navigationBarTitleText": "喜欢"
+}

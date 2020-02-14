@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-likes": "/components/likes/index",
+    "v-tag": "/components/tag/index",
+    "v-graylayer": "/components/graylayer/index",
+    "v-button": "/components/image-button/index"
+  }
+}
